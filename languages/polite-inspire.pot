@@ -1,0 +1,108 @@
+# Copyright (C) 2026 templatesell
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Polite Inspire 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/polite-inspire\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T08:41:38+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: polite-inspire\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Polite Inspire"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.templatesell.com/item/polite-inspire-blog-wordpress-theme/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Best free blog theme. It is a child theme of Polite, one of the popular masonry theme. With masonry layout and multiple blog page layout, this theme is the awesome and minimal theme. This theme has search option, off-canvas sidebar, multiple sidebar options, footer options, featured slider, promo boxed, footer widgets and many more. Besides that, this theme comes with added custom widgets for author information, featured posts, social icons, etc. It comes with primary color option to change the whole site color with a single click."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "templatesell"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.templatesell.com/"
+msgstr ""
+
+#: functions.php:118
+msgid "Menu"
+msgstr ""
+
+#: functions.php:157
+msgid "Related Posts"
+msgstr ""
+
+#: functions.php:166
+msgid "Copyright All Rights Reserved 2025"
+msgstr ""
+
+#: functions.php:201
+msgid "Show from Excerpt"
+msgstr ""
+
+#: functions.php:202
+msgid "Show from Content"
+msgstr ""
+
+#: functions.php:203
+msgid "Hide Content"
+msgstr ""
+
+#: functions.php:205
+msgid "Select Content Display From"
+msgstr ""
+
+#: functions.php:206
+msgid "You can enable excerpt from Screen Options inside post section of dashboard"
+msgstr ""
+
+#: functions.php:222
+msgid "Show Read Time"
+msgstr ""
+
+#: functions.php:223
+msgid "Option to hide the read time on the blog page."
+msgstr ""
+
+#: functions.php:239
+msgid "URL of Font Family"
+msgstr ""
+
+#: functions.php:241
+msgid "Select the font here. More options are available"
+msgstr ""
+
+#: functions.php:243
+msgid "in the premium version Polite Plus"
+msgstr ""
+
+#: functions.php:244
+msgid "check now."
+msgstr ""
+
+#. translators: %s: number of minutes a post takes to read.
+#: functions.php:277
+#, php-format
+msgid "%s Min Reading"
+msgid_plural "%s Min Reading"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/content.php:69
+msgid "Pages:"
+msgstr ""

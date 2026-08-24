@@ -16,16 +16,19 @@ $date = absint($polite_theme_options['polite-show-hide-date']);
 $category = absint($polite_theme_options['polite-show-hide-category']);
 $author = absint($polite_theme_options['polite-show-hide-author']);
 $read_time = absint($polite_theme_options['polite-show-hide-read-time']);
-$has_content = ($show_content_from == 'content') ? 'has-content' : 'no-cotent';
-$image_id = get_post_thumbnail_id();
-$image_url = wp_get_attachment_image_src( $image_id,'',true );
+$has_content = ($show_content_from == 'content') ? 'has-content' : 'no-content';
+$image_url = array();
+if ( has_post_thumbnail() ) {
+	$image_id  = get_post_thumbnail_id();
+	$image_url = wp_get_attachment_image_src( $image_id, 'large' );
+}
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($masonry); ?>>
     <div class="post-wrap <?php echo esc_attr($image_location); ?> <?php echo esc_attr($has_content); ?>">
         <?php if(has_post_thumbnail()) { ?>
             <div class="post-media">
                 
-                <div class="img-cover" style="background-image: url(<?php echo esc_url($image_url[0]);?>)"></div>
+                <div class="img-cover" style="background-image: url(<?php echo esc_url( isset( $image_url[0] ) ? $image_url[0] : '' ); ?>)"></div>
   
                 <?php 
                 if( 1 == $social_share ){
