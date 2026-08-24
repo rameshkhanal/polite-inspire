@@ -1,0 +1,429 @@
+/*
+Theme Name: Polite Inspire
+Theme URI: https://www.templatesell.com/item/polite-inspire-blog-wordpress-theme/
+Author: templatesell
+Author URI: https://www.templatesell.com/
+Description: Best free blog theme. It is a child theme of Polite, one of the popular masonry theme. With masonry layout and multiple blog page layout, this theme is the awesome and minimal theme. This theme has search option, off-canvas sidebar, multiple sidebar options, footer options, featured slider, promo boxed, footer widgets and many more. Besides that, this theme comes with added custom widgets for author information, featured posts, social icons, etc. It comes with primary color option to change the whole site color with a single click.
+Version: 1.0.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: polite-inspire
+Template: polite
+Requires PHP: 5.2
+Tested up to: 6.8
+Tags: grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, footer-widgets, custom-colors, custom-header, editor-style, rtl-language-support, theme-options, blog, news
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Polite Inspire is free WordPress theme by, Template Sell and child theme of Polite.
+Polite Inspire is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+html{
+    font-size: 100%!important;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+.main-header .logo h1{
+	text-transform: uppercase;
+}
+h1.site-title a {
+    font-size: 46px;
+    color: #181819;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 46px;
+    margin-bottom: 10px;
+    display: block;
+}
+p.site-description {
+    color: #989ea6;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.top-bar-area {
+    border-bottom: 1px solid #ededed;
+}
+.top-menu > ul > li > a{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.main-header {
+    border-bottom: 1px solid #f2f2f2;
+}
+.search-box a {
+    color: #333;
+}
+.posts-container{
+	padding-top: 30px;
+}
+.border-mask .size-polite-thumbnail-size-square{
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide-wrap{
+	background: transparent;
+    margin: 60px 0;
+}
+
+.post-wrap{
+	margin-bottom: 30px;
+}
+
+.full-image .post-media {
+    display: block;
+    min-width: 100%;
+    padding: 0;
+}
+.size-polite-related-post-thumbnails,
+.full-image .img-cover{
+    border-radius: 10px 10px 0 0;
+    transition: 0.45s;
+    display: block;
+    overflow: hidden;
+    height: 300px;
+}
+.related-posts-list .post-content,
+.full-image .post-content {
+    padding-bottom: 0;
+    border: 1px solid #F8EEFC;
+    border-radius: 0px 0px 10px 10px;
+    border-top: unset;
+}
+.related-posts-list .post-content{
+    padding:20px;
+}
+.full-image .post-meta {
+    padding: 15px 0;
+    border-top: 1px solid #F8EEFC;
+}
+.left-image{
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+.post-thumbnail .left-image,
+.left-image .img-cover{
+    border-radius: 10px 0 0 10px;
+    transition: 0.45s;
+    display: block;
+    overflow: hidden;
+}
+.left-image .post-media {
+    padding: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.left-image .post-content {
+    padding: 30px;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.left-image .post-content {
+    padding-bottom: 0;
+    border: 1px solid #F8EEFC;
+    border-radius: 0px 10px 10px 0px;
+    border-left: unset;
+    padding: 20px;
+}
+.left-image .post-meta {
+    padding: 15px 0;
+    border-top: 1px solid #F8EEFC;
+}
+
+
+
+.img-cover{
+    height: 100%;
+    max-width: 100%;
+    min-height: 260px;
+}
+.left-image .post-content{
+    padding: 30px;
+}
+.masonry-post .left-image{
+    display: block;
+}
+.masonry-post .left-image .post-media {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.masonry-post .left-image .img-cover{
+    padding-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    overflow: hidden;
+    height: 300px;
+}
+.masonry-post .left-image .post-content{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 0;
+    border: 1px solid #F8EEFC;
+    border-radius: 0px 0px 10px 10px;
+    border-top: unset;
+}
+
+
+.post-excerpt a, 
+.post-excerpt a, 
+.content a, 
+.content a{
+    color: #77929f;
+}
+
+.promo-three .item .promo-content {
+    background: transparent;
+}
+.item{
+    display: -ms-flexbox!important;
+    display: flex !important;
+    align-items: center;
+}
+
+.item .post-thumb{
+    width: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.promo-three .post-title{
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin:0 0 10px 0;
+} 
+.sidebar-3 .widget {
+    border:none;
+}
+
+.sidebar-3 .widget-title {
+    position: relative;
+    padding: 0;
+    border-bottom: none;
+    text-align: left;
+}
+.sidebar-3 .widget-title:after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #111;
+    top: 8px;
+    content: "";
+    margin-left: 10px;
+    left: auto;
+}
+.post-wrap.left-image.has-content{
+    display: inline-grid;
+}
+.post-wrap.left-image.has-content .post-media{
+    max-width: 100%;
+    display: block;
+}
+.comment-form{
+    padding: 15px;
+}
+.slide-wrap .caption {
+    padding: 20px 50px 20px 0;
+}
+.slide-wrap .caption span, 
+.slide-wrap .caption span a,
+.post-date,
+.post-date a {
+    color: #989ea6;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 3px 0 6px 0;
+    display: inline-block;
+}
+.slide-wrap .caption .s-cat,
+.promo-three .post-category a,
+.post-cats > span i, 
+.post-cats > span a {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 3px 5px 5px 0;
+    display: inline-block;
+}
+.slide-wrap .caption .s-cat{
+    padding: 0;
+}
+.post-cats>span{
+    font-size: 0;
+}
+.slide-wrap [class*="col-"] {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.modern-slider .slick-arrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 28px;
+    bottom: 65px;
+    background: #f0f0f0;
+    border-radius: 60px;
+}
+.modern-slider .slick-arrow {
+    right: -80px;
+    left: auto;
+    transform: rotate(90deg);
+}
+.modern-slider .slick-arrow.slick-next {
+    left: auto;
+    right: -80px;
+}
+.modern-slider .slick-arrow.slick-prev {
+    bottom: 120px;
+}
+.polite-promo-section{
+    padding: 20px 0;
+    margin-bottom: 50px;
+    background-color: #F4F4F4;
+}
+.post-thumbnail img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.show-more{
+    border-radius: 4px;
+}
+.pagination .page-numbers{
+    border-radius: 4px;
+}
+.sidebar-area .widget{
+    background:rgba(0, 0, 0, .04);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.footer-wrap .widget ul,
+.sidebar-area .widget ul,
+.sidebar-area .widget ol{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+}
+.widget_recent_entries ul li{
+    margin:0;
+}
+.footer-wrap .widget ul i{
+    margin-right: 10px;
+}
+.comment-form{
+    padding: 15px 0;
+}
+#author,
+#email,
+#url,
+#comment{
+    border-radius:4px;
+    border-width: 1px;
+}
+.comment-form #submit{
+    border-radius: 5px;
+}
+.footer-top-box .widget:nth-child(2n+2),
+.sidebar-area .widget:nth-child(2n+2){
+    margin-bottom: 30px;
+}
+.footer-top-box h2{
+    color: #fff;
+}
+.widget_block h2,
+.widget_block h3,
+.wp-block-group__inner-container h2{
+    font-size: 16px;
+}
+.wp-block-search__label {
+    margin-bottom: 15px;
+    display: block;
+}
+.wp-block-search__button {
+    margin-left: 0;
+    border: 0;
+    background: #333333;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+}
+.wp-block-search__input {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px 0 0 4px;
+}
+
+
+@media (max-width: 480px) {
+    .slide-wrap,{
+        margin: 20px 0;
+    }
+    .slide-wrap .caption{
+        padding: 0;
+    }
+    .slide-wrap [class*="col-"] {
+        display: block;
+    }
+    .polite-promo-section{
+        padding: 20px 0;
+    }
+    .promo-section{
+        padding: 0;
+    }
+    .promo-section .slick-dots{
+        bottom: 5px;
+    }
+
+    .left-image .post-media,
+    .left-image .post-content{
+        width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .post-thumbnail .left-image, 
+        .left-image .img-cover {
+        border-radius: 10px 10px 0 0;
+    }
+    .left-image .post-content {
+        border-radius: 0px 0 10px 10px;
+        border-top: unset;
+        border: 1px solid #F8EEFC;
+    }
+
+    .search-no-results .page-content{
+        padding: 0;
+    }
+}
+@media (min-width: 481px) {
+    .post-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
