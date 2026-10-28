@@ -24,25 +24,19 @@ A perfect theme for blog and magazine site. With masonry layout and multiple blo
 
 == Changelog ==
 = 1.0.4 - August 24 2026 =
-
-Fixed
-* The selectable body font was fetched from fonts.googleapis.com on every page view, over a protocol-relative URL and with no version, so WordPress appended its own to the request. The families this theme's picker offers that the parent does not already bundle are served from the theme now, so no visitor data leaves the site. Each family keeps its unicode-range, so a browser downloads only the faces the selected font actually needs
-* The Customizer's font list was built with a stray space before one of the family names. Google does not reject such a request, it silently drops the families it cannot parse - so the dropdown whose whole purpose is to show each option in its own typeface could not render all of them. The same stray space appeared in the array that builds the preview CSS, giving a selector that matched nothing. Both now derive from the theme's own font list, so they cannot drift apart
-* The parent's 'polite-style' handle was re-registered with no version, which makes WordPress substitute its own - the parent stylesheet was served as style.css?ver=7.1. It carries the parent's version now. The handle does still have to be registered here, because the parent enqueues it with get_stylesheet_uri(), which on a child install resolves to this theme's style.css
-* The dynamic font rule read the font array without checking the stored key exists. The parent offers its own font list, so a value set or left over from the parent was an undefined array key; it falls back to the theme default now
-* $parent_style was assigned and never used, and the stylesheet enqueue ended in a double semicolon
-* A default string in this child theme was tagged with the parent's text domain, so a language pack for this theme could never translate it
-* The child theme's text domain was loaded without being told where its language files are
-* 'no-cotent' was a misspelling of the class the theme meant to output
-* readme.txt gave the PHP requirement as 4.7, a PHP version that has never existed, and a stable tag that did not match the theme
-
-Performance
-* The reading-time counter ran the whole content pipeline on every post in the loop purely to count words: apply_filters( 'the_content' ) renders blocks, expands shortcodes, runs wpautop and resolves every oEmbed - and then do_shortcode() was called on the result a second time. It counts the raw content now, with strip_shortcodes(), which removes shortcode tags without executing them
-* _n()'s third argument selects the plural form and has to be a number; it was being passed number_format_i18n(), which returns a formatted string
-
-Other
-* Added languages/polite-inspire.pot
-* Tested up to WordPress 7.1
+* Fixed: webfonts are now served from the theme, not Google.
+* Fixed: stray space in the Customizer font list.
+* Fixed: parent stylesheet was enqueued without a version.
+* Fixed: undefined array key in the dynamic font rule.
+* Fixed: unused $parent_style variable and double semicolon.
+* Fixed: string used the parent text domain.
+* Fixed: child text domain loaded without a language path.
+* Fixed: "no-cotent" class typo.
+* Fixed: PHP requirement and stable tag in readme.txt.
+* Changed: reading time no longer renders the full content.
+* Fixed: plural form argument in the reading time string.
+* Added: languages/polite-inspire.pot
+* Tested with WP 7.1
 
 = 1.0.3 - May 19 2025 =
 * Fixing Track Issue
